@@ -1,13 +1,15 @@
 <div class="row w-100">
   <div class="col-lg-12">
-    <h2>Filter Customers</h2>
+
     <select  (change)="filterCustomers($event)">
       <option value="">All Customers</option>
       <option *ngFor="let customer of customers" [value]="customer.name">{{ customer.name }}</option>
     </select>
   </div>
-  <div class="col-lg-6">
-    <h2>Customers</h2>
+
+
+  <div class="col-lg-12">
+    <h2 class="m-4">Customers</h2>
     <table class="table table-striped">
       <thead>
         <tr>
@@ -26,8 +28,10 @@
 
 </div>
 <div class="row w-100">
-  <div class="col-lg-6">
-    <h2>Transaction Chart</h2>
+  <div class="col-lg-12">
+    <h5 class="m-4">  Click On Any customer. and his Agraph  will be display 😊😊
+    </h5>
+    <h2 class="m-4">Transaction Chart</h2>
     <canvas id="transactionChart"></canvas>
   </div>
 </div>
